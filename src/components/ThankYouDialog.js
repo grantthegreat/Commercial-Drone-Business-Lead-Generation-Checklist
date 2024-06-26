@@ -1,5 +1,5 @@
 import React from 'react';
-import { AlertDialog, AlertDialogAction, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle } from '@radix-ui/react-alert-dialog';
+import { AlertDialog, AlertDialogAction, AlertDialogContent, AlertDialogDescription, AlertDialogHeader, AlertDialogTitle } from '@radix-ui/react-alert-dialog';
 
 const ThankYouDialog = ({ open, onOpenChange }) => (
   <AlertDialog open={open} onOpenChange={onOpenChange}>
