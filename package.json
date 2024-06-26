@@ -10,6 +10,9 @@
     "@radix-ui/react-alert-dialog": "^1.0.0",
     "react-scripts": "4.0.3"
   },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
