@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Progress } from '@/components/ui/progress';
-import { Button } from '@/components/ui/button';
+import { Progress } from '@radix-ui/react-progress';
+import { Button } from '@radix-ui/react-alert-dialog';
 import ChecklistSection from './components/ChecklistSection';
 import EmailForm from './components/EmailForm';
 import ThankYouDialog from './components/ThankYouDialog';
