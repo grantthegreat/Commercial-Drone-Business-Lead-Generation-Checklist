@@ -1,13 +1,11 @@
 import React from 'react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card } from '@radix-ui/react-alert-dialog';
 import ChecklistItem from './ChecklistItem';
 
 const ChecklistSection = ({ title, items, checkedItems, onToggle }) => (
   <Card className="mb-4">
-    <CardHeader>
-      <CardTitle>{title}</CardTitle>
-    </CardHeader>
-    <CardContent>
+    <div className="p-4">
+      <h2 className="text-lg font-semibold mb-2">{title}</h2>
       {items.map((item) => (
         <ChecklistItem
           key={item}
@@ -16,7 +14,7 @@ const ChecklistSection = ({ title, items, checkedItems, onToggle }) => (
           onToggle={onToggle}
         />
       ))}
-    </CardContent>
+    </div>
   </Card>
 );
 
