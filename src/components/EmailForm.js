@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Input } from '@/components/ui/input';
-import { Button } from '@/components/ui/button';
+import { Button } from '@radix-ui/react-alert-dialog';
 
 const EmailForm = ({ onSubmit }) => {
   const [email, setEmail] = useState('');
@@ -14,12 +13,12 @@ const EmailForm = ({ onSubmit }) => {
 
   return (
     <form onSubmit={handleSubmit} className="mb-4">
-      <Input 
+      <input 
         type="email" 
         placeholder="Enter your email to save progress" 
         value={email} 
         onChange={(e) => setEmail(e.target.value)}
-        className="mb-2"
+        className="mb-2 p-2 w-full border rounded"
       />
       <Button type="submit">Save Progress</Button>
     </form>
